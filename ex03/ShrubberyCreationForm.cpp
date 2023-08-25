@@ -34,7 +34,8 @@ void	ShrubberyCreationForm::execute(const Bureaucrat& executor) const
 		throw Form::GradeTooLowException();
 	else
 	{
-		resFile.open(target_ + "_shrubbery");
+		std::string	fileName = target_ + "_shrubbery";
+		resFile.open(fileName.c_str());
 		if (resFile.is_open())
 		{
 			resFile << "       _-_" << std::endl;

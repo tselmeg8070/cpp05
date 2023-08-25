@@ -5,15 +5,15 @@ int main()
 {
 	try
 	{
-		Bureaucrat bureaucrat1("High", 0);
-		Bureaucrat bureaucra2("Low", 150);
+		Bureaucrat bureaucrat1("h", 1);
+		Bureaucrat bureaucra2("l", 150);
 
 		bureaucrat1.incrementGrade();
 		bureaucra2.decrementGrade();
 	}
 	catch (const std::exception &e)
 	{
-		std::cerr << "Exception caught: " << e.what() << std::endl;
+		std::cerr << e.what() << std::endl;
 	}
-	return 0;
+	return (0);
 }

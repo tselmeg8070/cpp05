@@ -6,8 +6,8 @@ int main()
 {
 	try
 	{
-		Bureaucrat bureaucrat1("High", 1);
-		Bureaucrat bureaucrat2("Low", 150);
+		Bureaucrat bureaucrat1("h", 3);
+		Bureaucrat bureaucrat2("l", 150);
 
 		Form governor("Governor", 2, 1);
 		bureaucrat1.signForm(governor);
